@@ -1,4 +1,4 @@
-import { markLevelCleared, isLevelUnlocked, isLevelCleared } from "./Game/system/progress.js";
+import { markLevelCleared, isLevelUnlocked, isLevelCleared } from "Game/system/progress.js";
 
 export function showLobby(container, onSelectLevel) {
   const lobby = document.createElement("div");
