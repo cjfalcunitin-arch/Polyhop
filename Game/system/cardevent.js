@@ -1,5 +1,5 @@
-import { addPickedCard, isCardPicked, resetPickedCards } from "Game/storage.js";
-import { getCredit, subtractCredit } from "Game/system/credit.js";
+import { addPickedCard, isCardPicked, resetPickedCards } from "./Game/storage.js";
+import { getCredit, subtractCredit } from "./Game/system/credit.js";
 
 export function showCardEvent(container) {
   // DON'T reset picked cards at start - let them persist
