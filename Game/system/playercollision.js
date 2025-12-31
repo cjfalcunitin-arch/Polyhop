@@ -1,6 +1,6 @@
-import { on } from "Game/core/eventhandler.js";
-import { addCredit } from "Game/system/credit.js";
-import { trigger } from "Game/core/eventhandler.js";
+import { on } from "./Game/core/eventhandler.js";
+import { addCredit } from "./Game/system/credit.js";
+import { trigger } from "./Game/core/eventhandler.js";
 
 /**
  * Handles player-enemy collisions
