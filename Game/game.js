@@ -1,17 +1,17 @@
-import { createRenderer } from "Game/core/renderer.js";
-import { getPickedCards } from "Game/storage.js";
-import { trigger, on } from "Game/core/eventhandler.js";
-import { setupPlayerCollision } from "Game/system/playercollision.js";
+import { createRenderer } from "./Game/core/renderer.js";
+import { getPickedCards } from "./Game/storage.js";
+import { trigger, on } from "./Game/core/eventhandler.js";
+import { setupPlayerCollision } from "./Game/system/playercollision.js";
 /* ===== NEW: CREDIT DISPLAY ===== */
-import { getCredit, resetCredit, setCredit, addCredit, subtractCredit } from "Game/system/credit.js";
+import { getCredit, resetCredit, setCredit, addCredit, subtractCredit } from "./Game/system/credit.js";
 
 /* ===== NEW: RENDER CARD & DRAG ===== */
-import { createCardElement } from "Game/draw/renderbody.js";
-import { makeDraggable } from "Game/system/makedraggable.js";
+import { createCardElement } from "./Game/draw/renderbody.js";
+import { makeDraggable } from "./Game/system/makedraggable.js";
 
 /* ===== NEW: PROGRESS & WIN ===== */
-import { markLevelCleared, isLevelUnlocked, isLevelCleared } from "Game/system/progress.js";
-import { showOverlay } from "Game/system/win.js"; // Combined win/lose overlay
+import { markLevelCleared, isLevelUnlocked, isLevelCleared } from "./Game/system/progress.js";
+import { showOverlay } from "./Game/system/win.js"; // Combined win/lose overlay
 export function showGame(container, level, onExitToLobby) {
   /* ===== GLOBAL NO-SCROLL ===== */
   document.body.style.margin = "0";
