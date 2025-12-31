@@ -1,5 +1,5 @@
 // /Game/system/projectile.js
-import { trigger } from "/Game/core/eventhandler.js";
+import { trigger } from "Game/core/eventhandler.js";
 
 export function createProjectileSystem(renderer) {
   const projectiles = [];
