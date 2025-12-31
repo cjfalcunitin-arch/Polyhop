@@ -1,13 +1,13 @@
 // /Game/core/renderer.js
-import { drawPlayer } from "Game/draw/player.js";
-import { drawEnemy } from "Game/draw/enemy.js";
-import { drawFloor } from "Game/draw/floor.js";
-import { createDoor, drawDoor } from "Game/draw/door.js";
-import { on, trigger } from "Game/core/eventhandler.js";
-import { createProjectileSystem } from "Game/system/projectilesystem.js";
-import { getLevelConfig } from "Game/levels/level.js";
-import { setCredit } from "Game/system/credit.js";
-import { showCardEvent } from "Game/system/cardevent.js";
+import { drawPlayer } from "./Game/draw/player.js";
+import { drawEnemy } from "./Game/draw/enemy.js";
+import { drawFloor } from "./Game/draw/floor.js";
+import { createDoor, drawDoor } from "./Game/draw/door.js";
+import { on, trigger } from "./Game/core/eventhandler.js";
+import { createProjectileSystem } from "./Game/system/projectilesystem.js";
+import { getLevelConfig } from "./Game/levels/level.js";
+import { setCredit } from "./Game/system/credit.js";
+import { showCardEvent } from "./Game/system/cardevent.js";
 
 export function createRenderer(canvas, level) {
   const ctx = canvas.getContext("2d");
