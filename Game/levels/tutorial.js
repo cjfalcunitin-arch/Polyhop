@@ -1,5 +1,5 @@
-import { showCardEvent } from "./Game/system/cardevent.js";
-import { setCredit } from './Game/system/credit.js';
+import { showCardEvent } from "Game/system/cardevent.js";
+import { setCredit } from 'Game/system/credit.js';
 
 export function showTutorial(container, onComplete) {
   console.log("Tutorial activated");
